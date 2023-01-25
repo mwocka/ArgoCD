@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 192.168.44.44:8082/docker_registry/frontend:1.0
+        image: 192.168.44.44:8082/docker_registry/frontend:RC-1.24bf883
         ports:
         - containerPort: 5000
         env:
