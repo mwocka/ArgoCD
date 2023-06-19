@@ -16,8 +16,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: 192.168.44.44:8082/docker_registry/backend:1.0
+        image: mateuszwocka/backend:RC-6.32698bd 
         ports:
         - containerPort: 5001
-      imagePullSecrets:
-      - name: regcred
