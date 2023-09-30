@@ -16,11 +16,9 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 192.168.44.44:8082/docker_registry/frontend:RC-1.24bf883
+        image: mateuszwocka/frontend:RC-1.887a8c7
         ports:
         - containerPort: 5000
         env:
         - name: BACKEND_URL
           value: http://backend-service:5001
-      imagePullSecrets:
-      - name: regcred
